@@ -12,9 +12,8 @@
     <Folder Include="Models\ViewComponents\" />
     <Folder Include="Services\" />
     <Folder Include="Views\Home\" />
-    <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\imgages\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\sass\" />
   </ItemGroup>
