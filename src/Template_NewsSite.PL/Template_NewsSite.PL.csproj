@@ -4,4 +4,19 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Models\ViewComponents\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\sass\" />
+  </ItemGroup>
+
 </Project>
