@@ -44,7 +44,10 @@
 6. Add new entity in Domain as: EntityBase =>  NewsItem => TextField
 7. Create Db Context
 8. Add Repositoty (Interface and his implementation)
-9. 
+9. Create DataManager for helpful use repository code
+10.Add new functional app as like as servises in Startup.sc
+11.Add database context in Startup.sc
+12.Add IConfigure setups
 
 
 ### End ###
