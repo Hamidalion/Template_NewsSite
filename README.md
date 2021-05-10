@@ -35,4 +35,16 @@
 6. Create HomeController.
 7. Create View for home/index
 
+### Step 3 ###
+1. Delete apsettings.json/appsettings.Development.json.
+2. Create appsettings.staging.json and appsettings.prodaction.json files.
+3. Change apsettings.json 
+4. Create Config.cs with properties of apsettings.json 
+5. Add our owned apsettings.json file in Startup.sc
+6. Add new entity in Domain as: EntityBase =>  NewsItem => TextField
+7. Create Db Context
+8. Add Repositoty (Interface and his implementation)
+9. 
+
+
 ### End ###
