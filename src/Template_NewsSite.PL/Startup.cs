@@ -75,16 +75,17 @@ namespace Template_NewsSite.PL
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            // usingn stating file as CSS,JS,img and etc.
+            app.UseStaticFiles();
 
             // add sistem routing 
             app.UseRouting();
 
+            //It was beteween Routing and EndPoint
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();
-
-            // usingn stating file as CSS,JS,img and etc.
-            app.UseStaticFiles();
 
             // register new start point
             app.UseEndpoints(endpoints =>

@@ -15,6 +15,7 @@ namespace Template_NewsSite.PL.Domain.Context
         public DbSet<TextField> TextFields { get; set; }
         public DbSet<NewsItem> NewsItems { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

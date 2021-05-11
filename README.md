@@ -48,6 +48,6 @@
 10.Add new functional app as like as servises in Startup.sc
 11.Add database context in Startup.sc
 12.Add IConfigure setups
-
+13.Add Migration
 
 ### End ###
