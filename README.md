@@ -50,4 +50,10 @@
 12.Add IConfigure setups
 13.Add Migration
 
+### Step 4 ###
+1. Add amin area in Startup 
+2. Create AdminAreaAuthorization.cs class witch one check atribute of controller and add him some filters.
+3. Add settings to Startup for services.AddControllersWithViews policy of adminarea
+4. Set admin area policy in Startup.cs
+ 
 ### End ###

@@ -61,8 +61,17 @@ namespace Template_NewsSite.PL
                 option.SlidingExpiration = true;
             });
 
+            // set admin area policy
+            services.AddAuthorization(x =>
+            {
+                x.AddPolicy("Admin", policy => { policy.RequireRole("admin"); });
+            });
+
             // add seporting Controllers and views
-            services.AddControllersWithViews()
+            services.AddControllersWithViews(x => 
+            { 
+                x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
+            })
                 // set version of asp.net
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
         }
@@ -93,6 +102,9 @@ namespace Template_NewsSite.PL
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "admin",
+                    pattern: "{area:exist}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
