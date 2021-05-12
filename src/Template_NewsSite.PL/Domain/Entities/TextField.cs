@@ -14,7 +14,7 @@ namespace Template_NewsSite.PL.Domain.Entities
         [Display(Name = "News title")]
         public override string Title { get; set; } = "Information page";
 
-        [Display(Name = "Full description")]
+        [Display(Name = "Сontent")]
         public override string Text { get; set; } = "Administrator created full description";
     }
 }

@@ -192,27 +192,27 @@ namespace Template_NewsSite.PL.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "7218e0b8-c3fc-400c-ac86-2614369c2ce4", "e24c48d4-d168-49b5-bf91-e23814c3c222", "admin", "ADMIN" });
+                values: new object[] { "e59beeb5-98e0-4676-96ed-68838ad79a13", "21a884ad-0f99-42c1-890b-9f59af540074", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "3e8f4651-3144-4de4-96b2-7a4ad87a4d51", 0, "9412436f-8259-4853-b571-267d2b3738c1", "Fearofwar@mail.ru", true, false, null, "FEAROFWAR@MAIL.RU", "ADMIN", "AQAAAAEAACcQAAAAEBTURkvfZGshZ8zgHe1WV2DrsUesoMxnU1R1hKGFQHD4KfMFXYrBV8cpkTqjv/b8ig==", null, false, "", false, "admin" });
+                values: new object[] { "7c9ee6a5-873e-4087-bba4-aa5f6b29751c", 0, "c75e8690-f0a5-4eca-b365-365da6565909", "Fearofwar@mail.ru", true, false, null, "FEAROFWAR@MAIL.RU", "ADMIN", "AQAAAAEAACcQAAAAEEuUPKy+4io6Cz2QYVRv3m/xgvO/A37ALwOFxd8VW1jdeMFszA9s3e1o7bS03xB2lg==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "TextFields",
                 columns: new[] { "Id", "CodeWord", "DateAdded", "MetaDescription", "MetaKeywords", "MetaTitle", "Subtitle", "Text", "Title" },
                 values: new object[,]
                 {
-                    { new Guid("af96eb33-720c-432f-b2e7-efca9c190f0e"), "Main page", new DateTime(2021, 5, 11, 9, 20, 37, 656, DateTimeKind.Utc).AddTicks(33), null, null, null, null, "Administrator created full description", "The main page" },
-                    { new Guid("a499ab91-e399-48b3-9352-b4d1907e6f4b"), "News page", new DateTime(2021, 5, 11, 9, 20, 37, 656, DateTimeKind.Utc).AddTicks(1336), null, null, null, null, "Administrator created full description", "All news" },
-                    { new Guid("a00ec9e3-51db-4007-850a-325e499bee7a"), "Contacts page", new DateTime(2021, 5, 11, 9, 20, 37, 656, DateTimeKind.Utc).AddTicks(1378), null, null, null, null, "Administrator created full description", "Contacts" }
+                    { new Guid("d4f7fa20-6360-4a0e-a8b8-7762f7cdc94f"), "PageIndex", new DateTime(2021, 5, 12, 11, 25, 30, 205, DateTimeKind.Utc).AddTicks(2636), null, null, null, null, "Administrator created full description", "Main" },
+                    { new Guid("a7981c54-22f3-4349-94fe-8b06d4c0ecbb"), "PageNews", new DateTime(2021, 5, 12, 11, 25, 30, 205, DateTimeKind.Utc).AddTicks(3936), null, null, null, null, "Administrator created full description", "All news" },
+                    { new Guid("a8c173c0-690b-4032-aed5-acd06edcfc07"), "PageContacts", new DateTime(2021, 5, 12, 11, 25, 30, 205, DateTimeKind.Utc).AddTicks(3978), null, null, null, null, "Administrator created full description", "Contacts" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "UserId", "RoleId" },
-                values: new object[] { "3e8f4651-3144-4de4-96b2-7a4ad87a4d51", "7218e0b8-c3fc-400c-ac86-2614369c2ce4" });
+                values: new object[] { "7c9ee6a5-873e-4087-bba4-aa5f6b29751c", "e59beeb5-98e0-4676-96ed-68838ad79a13" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

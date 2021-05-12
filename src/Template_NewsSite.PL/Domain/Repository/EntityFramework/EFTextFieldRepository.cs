@@ -34,13 +34,9 @@ namespace Template_NewsSite.PL.Domain.Repository.EntityFramework
         public void SaveTextField(TextField entity)
         {
             if (entity.Id == default)
-            {
                 _context.Entry(entity).State = EntityState.Added;
-            }
             else
-            {
                 _context.Entry(entity).State = EntityState.Modified;
-            }
             _context.SaveChanges();
         }
 

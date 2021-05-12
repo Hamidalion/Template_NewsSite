@@ -51,9 +51,12 @@
 13.Add Migration
 
 ### Step 4 ###
-1. Add amin area in Startup 
+1. Add admin area in Startup 
 2. Create AdminAreaAuthorization.cs class witch one check atribute of controller and add him some filters.
 3. Add settings to Startup for services.AddControllersWithViews policy of adminarea
 4. Set admin area policy in Startup.cs
- 
+5. Create LoginViewModel
+6. Add AccountController
+7. Add HomeController and his view in AdminArea
+
 ### End ###

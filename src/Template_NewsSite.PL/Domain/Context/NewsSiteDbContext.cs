@@ -51,21 +51,21 @@ namespace Template_NewsSite.PL.Domain.Context
             builder.Entity<TextField>().HasData(new TextField
             {
                 Id = Guid.NewGuid(),
-                CodeWord = "Main page",
-                Title = "The main page"
+                CodeWord = "PageIndex",
+                Title = "Main"
             });
 
             builder.Entity<TextField>().HasData(new TextField
             {
                 Id = Guid.NewGuid(),
-                CodeWord = "News page",
+                CodeWord = "PageNews",
                 Title = "All news"
             });
 
             builder.Entity<TextField>().HasData(new TextField
             {
                 Id = Guid.NewGuid(),
-                CodeWord = "Contacts page",
+                CodeWord = "PageContacts",
                 Title = "Contacts"
             });
         }

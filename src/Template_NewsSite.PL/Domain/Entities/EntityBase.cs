@@ -22,7 +22,7 @@ namespace Template_NewsSite.PL.Domain.Entities
         [Display(Name = "Full description")]
         public virtual string Text { get; set; }
 
-        [Display(Name = "Title picture")]
+        [Display(Name = "SEA metatag Title")]
         public string MetaTitle { get; set; }
 
         [Display(Name = "SEA metatag Description")]

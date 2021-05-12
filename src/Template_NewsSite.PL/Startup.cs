@@ -1,16 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Template_NewsSite.PL.Domain.Context;
 using Template_NewsSite.PL.Domain.Managers;
 using Template_NewsSite.PL.Domain.Repository.EntityFramework;
@@ -64,12 +59,12 @@ namespace Template_NewsSite.PL
             // set admin area policy
             services.AddAuthorization(x =>
             {
-                x.AddPolicy("Admin", policy => { policy.RequireRole("admin"); });
+                x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
             });
 
             // add seporting Controllers and views
-            services.AddControllersWithViews(x => 
-            { 
+            services.AddControllersWithViews(x =>
+            {
                 x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
             })
                 // set version of asp.net
@@ -84,7 +79,7 @@ namespace Template_NewsSite.PL
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
             // usingn stating file as CSS,JS,img and etc.
             app.UseStaticFiles();
 
@@ -100,11 +95,11 @@ namespace Template_NewsSite.PL
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "admin",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapControllerRoute(
-                    name: "admin",
-                    pattern: "{area:exist}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
