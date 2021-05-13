@@ -14,7 +14,7 @@
 5. Dawnload CKEditor
 6. Transfer of code and files from a template
 7. Transfer CKEditor in wwwroot/js/
-8. Split main html blocks in different files (as CssPartial, )
+8. Split main html blocks in different files (as CssPartial, ).
 
 ### Step 2 ###
 1. Add NG-packets:
@@ -33,7 +33,7 @@
 	then delete created file and open bundleconfig.json and set "outputFileName": "wwwroot/js/scripts.js", and add used js-files
 	ATTANSION! library JQuery mast be in first places.
 6. Create HomeController.
-7. Create View for home/index
+7. Create View for home/index.
 
 ### Step 3 ###
 1. Delete apsettings.json/appsettings.Development.json.
@@ -48,7 +48,7 @@
 10.Add new functional app as like as servises in Startup.sc
 11.Add database context in Startup.sc
 12.Add IConfigure setups
-13.Add Migration
+13.Add Migration.
 
 ### Step 4 ###
 1. Add admin area in Startup 
@@ -58,5 +58,10 @@
 5. Create LoginViewModel
 6. Add AccountController
 7. Add HomeController and his view in AdminArea
+8. Add TextFieldContoller and his view in AdminArea
+9. Add Extension for cutting word "Controller"
+10.Create NewsItemsController in AdminArea, and add action Edit(almost this is create), Delete
+11.Add Edit View.
+
 
 ### End ###

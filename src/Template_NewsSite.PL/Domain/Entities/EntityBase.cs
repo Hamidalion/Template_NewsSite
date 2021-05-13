@@ -22,6 +22,9 @@ namespace Template_NewsSite.PL.Domain.Entities
         [Display(Name = "Full description")]
         public virtual string Text { get; set; }
 
+        [Display(Name = "Title picture")]
+        public virtual string TitleImagePath { get; set; }
+
         [Display(Name = "SEA metatag Title")]
         public string MetaTitle { get; set; }
 

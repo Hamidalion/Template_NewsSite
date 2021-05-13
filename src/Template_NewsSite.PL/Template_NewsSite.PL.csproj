@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Models\ViewComponents\" />
-    <Folder Include="wwwroot\imgages\" />
+    <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\sass\" />
   </ItemGroup>
 

@@ -9,7 +9,8 @@
     <div>
         <h2>@strTitle</h2>
         <div class="div-box">
-            <a asp-area="Admin" asp-controller="NewsItems" asp-action="Edit" asp-route-id="" >Add</a>
+            <h3>Edit news item</h3>
+            <a asp-area="Admin" asp-controller="NewsItems" asp-action="Edit" asp-route-id="">Add</a>
         </div>
         @if (Model.Any())
         {
@@ -18,13 +19,13 @@
                 {
                     <div>
                         <a asp-area="Admin" asp-controller="NewsItems" asp-action="Edit" asp-route-id="@entity.Id">Edit</a>
-            
-                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="NewsItems" asp-action="Edit">
+                        |
+                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="NewsItems" asp-action="Delete">
                             <input type="hidden" name="id" value="@entity.Id" />
                             <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">Delete</a>
                         </form>
-            
-                        <a asp-area="" asp-controller="NewsItems" asp-action="Index" asp-route-id="@entity.Id"> @($"{entity.Title}") </a>
+                        |
+                        <a asp-area="" asp-controller="NewsItems" asp-action="Index" asp-route-id="@entity.Id"> News item - @($"{entity.Title}") </a>
                     </div>
                 }
             </div>

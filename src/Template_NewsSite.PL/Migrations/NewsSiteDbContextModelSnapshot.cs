@@ -48,8 +48,8 @@ namespace Template_NewsSite.PL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e59beeb5-98e0-4676-96ed-68838ad79a13",
-                            ConcurrencyStamp = "21a884ad-0f99-42c1-890b-9f59af540074",
+                            Id = "b97e765e-0702-4a06-808f-e8149d32bb3d",
+                            ConcurrencyStamp = "1d325883-a1fe-4d3d-bd44-9655b0d88566",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -146,15 +146,15 @@ namespace Template_NewsSite.PL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7c9ee6a5-873e-4087-bba4-aa5f6b29751c",
+                            Id = "54784c1d-0771-487e-aab1-a155a1ecad20",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c75e8690-f0a5-4eca-b365-365da6565909",
+                            ConcurrencyStamp = "042a5169-0e29-4308-8905-1c72aa4788fc",
                             Email = "Fearofwar@mail.ru",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "FEAROFWAR@MAIL.RU",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEuUPKy+4io6Cz2QYVRv3m/xgvO/A37ALwOFxd8VW1jdeMFszA9s3e1o7bS03xB2lg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFK7NtjPNx5oKxUgNv0Ny8LwYUt6tsqbIIDo7dWMdpqZfRgOeFgZ0oluF1cZPo8oCg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -225,8 +225,8 @@ namespace Template_NewsSite.PL.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "7c9ee6a5-873e-4087-bba4-aa5f6b29751c",
-                            RoleId = "e59beeb5-98e0-4676-96ed-68838ad79a13"
+                            UserId = "54784c1d-0771-487e-aab1-a155a1ecad20",
+                            RoleId = "b97e765e-0702-4a06-808f-e8149d32bb3d"
                         });
                 });
 
@@ -277,6 +277,9 @@ namespace Template_NewsSite.PL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TitleImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("NewsItems");
@@ -313,6 +316,9 @@ namespace Template_NewsSite.PL.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TitleImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("TextFields");
@@ -320,25 +326,25 @@ namespace Template_NewsSite.PL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("d4f7fa20-6360-4a0e-a8b8-7762f7cdc94f"),
+                            Id = new Guid("2f9078f3-85f6-434f-a775-695ced5db938"),
                             CodeWord = "PageIndex",
-                            DateAdded = new DateTime(2021, 5, 12, 11, 25, 30, 205, DateTimeKind.Utc).AddTicks(2636),
+                            DateAdded = new DateTime(2021, 5, 13, 10, 23, 5, 210, DateTimeKind.Utc).AddTicks(1961),
                             Text = "Administrator created full description",
                             Title = "Main"
                         },
                         new
                         {
-                            Id = new Guid("a7981c54-22f3-4349-94fe-8b06d4c0ecbb"),
+                            Id = new Guid("6e4d4273-4d0b-4ac5-a524-107094a68e07"),
                             CodeWord = "PageNews",
-                            DateAdded = new DateTime(2021, 5, 12, 11, 25, 30, 205, DateTimeKind.Utc).AddTicks(3936),
+                            DateAdded = new DateTime(2021, 5, 13, 10, 23, 5, 210, DateTimeKind.Utc).AddTicks(3256),
                             Text = "Administrator created full description",
                             Title = "All news"
                         },
                         new
                         {
-                            Id = new Guid("a8c173c0-690b-4032-aed5-acd06edcfc07"),
+                            Id = new Guid("aaaf297d-cfe9-4e6e-bed3-27dc46f951f2"),
                             CodeWord = "PageContacts",
-                            DateAdded = new DateTime(2021, 5, 12, 11, 25, 30, 205, DateTimeKind.Utc).AddTicks(3978),
+                            DateAdded = new DateTime(2021, 5, 13, 10, 23, 5, 210, DateTimeKind.Utc).AddTicks(3295),
                             Text = "Administrator created full description",
                             Title = "Contacts"
                         });
