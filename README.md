@@ -63,5 +63,15 @@
 10.Create NewsItemsController in AdminArea, and add action Edit(almost this is create), Delete
 11.Add Edit View.
 
+### Step 5 ###
+1. Correct headerPartial view
+2. Delete unused items in footerPartial
+3. Create action in HomeController as Index and Contacts
+4. Go to Index.cshtml add view 
+5. Go to Contacts.cshtml add view 
+6. Add NewsItems controller and Index action
+7. Add Index view 
+8. Add Swah view
+
 
 ### End ###
