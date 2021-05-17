@@ -72,6 +72,7 @@
 6. Add NewsItems controller and Index action
 7. Add Index view 
 8. Add Swah view
-
+9. Add SidebarViewComponent this is like controller
+10.Add view for SidebarViewComponent
 
 ### End ###
