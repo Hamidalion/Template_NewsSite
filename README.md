@@ -75,4 +75,8 @@
 9. Add SidebarViewComponent this is like controller
 10.Add view for SidebarViewComponent
 
+### Step 5 ###
+1. Set publishib properties
+2. Publish
+
 ### End ###
