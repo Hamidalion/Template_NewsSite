@@ -1,10 +1,11 @@
-# Template_NewsSite
+# Template_NewsSite 
 
 ## Acquaintance ##
-
+This application is designed as a template application for a news site. Used a standard set of technologies for MVC asp.net application. 
+The architectural approach in this application is wrong.
 
 ##### Purpose #####
-
+Get practice in development MVC asp.net apps.
 
 ### Step 1 ###
 1. Create solution
