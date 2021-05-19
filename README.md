@@ -8,6 +8,8 @@ The architectural approach in this application is wrong.
 Get practice in development MVC asp.net apps.
 
 ### Step 1 ###
+cmd:\ dotnet new sln
+
 1. Create solution
 2. Create ASP.NET Core Web Application (Template EMPTY or MVC)
 3. Create derictories and init files as: _Layout, _ViewStart, _ViewImports.cshtml and etc.
